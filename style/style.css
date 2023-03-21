@@ -1,1 +1,100 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+body {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.order_now {
+  height: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #35b8be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_now :not(p):hover {
+  color: chartreuse;
+}
+.order_now a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav_panel {
+  margin: 0 7.5%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_panel :hover {
+  color: #35b8be;
+}
+.nav_panel a {
+  color: #28224b;
+  padding-right: 30px;
+}
+.nav_panel button {
+  background-color: #35b8be;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.background {
+  background-image: url(../image/bc_image.svg);
+}
+
+#reviews_block {
+  margin: 0 7.5%;
+  display: flex;
+  height: 820px;
+}
+#reviews_block img {
+  margin-top: 100px;
+  width: 600px;
+  height: 580px;
+}
+#reviews_block button {
+  width: 193px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #35b8be;
+  color: #ffffff;
+  cursor: pointer;
+}
+#reviews_block .star_logo {
+  margin: 0px;
+  width: 26px;
+  height: 25px;
+}
+#reviews_block .h1_like {
+  margin: 150px 0 10px 0;
+  font-size: 60px;
+}
+#reviews_block .h1_like span {
+  color: #35b8be;
+}
+#reviews_block .placeH {
+  font-size: 18px;
+  color: #546285;
+}
+#reviews_block .grade {
+  width: 500px;
+  height: 57px;
+}
+#reviews_block h4 {
+  font-size: x-large;
+  margin: 30px 0 0 0;
+}
+#reviews_block span {
+  color: #35b8be;
+}/*# sourceMappingURL=style.css.map */

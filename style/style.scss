@@ -1,0 +1,99 @@
+$color: #35b8be;
+$bColor: #35b8be;
+$margin: 0 7.5%;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin position($display, $justify, $items) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $items;
+}
+body {
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+    }
+    width: 100%;
+    box-sizing: border-box;
+}
+* {
+    font-family: "Inter", sans-serif;
+}
+.order_now {
+    height: 48px;
+    color: #ffffffcc;
+    background-color: $bColor;
+    @include position(flex, center, center);
+    :not(p):hover {
+        color: chartreuse;
+    }
+    a {
+        color: #ffffffcc;
+    }
+}
+
+.nav_panel {
+    margin: $margin;
+    height: 100px;
+    @include position(flex, space-between, center);
+    :hover {
+        color: $color;
+    }
+    a {
+        color: #28224b;
+        padding-right: 30px;
+    }
+    button {
+        background-color: $bColor;
+        @include size(55px, 55px);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+.background {
+    background-image: url(../image/bc_image.svg);
+}
+#reviews_block {
+    margin: $margin;
+    display: flex;
+    height: 820px;
+    img {
+        margin-top: 100px;
+        @include size(600px, 580px);
+    }
+    button {
+        @include size(193px, 60px);
+        border-radius: 6px;
+        background-color: $bColor;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .star_logo {
+        margin: 0px;
+        @include size(26px, 25px);
+    }
+    .h1_like {
+        margin: 150px 0 10px 0;
+        font-size: 60px;
+        span {
+            color: $color;
+        }
+    }
+    .placeH {
+        font-size: 18px;
+        color: #546285;
+    }
+    .grade {
+        @include size(500px, 57px);
+    }
+    h4 {
+        font-size: x-large;
+        margin: 30px 0 0 0;
+    }
+    span { 
+        color: $color;
+    }
+}
