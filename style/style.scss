@@ -6,6 +6,10 @@ $margin: 0 7.5%;
     width: $width;
     height: $height;
 }
+@mixin font_text($size, $color) {
+    font-size: $size;
+    color: $color;
+}
 @mixin position($display, $justify, $items) {
     display: $display;
     justify-content: $justify;
@@ -55,11 +59,11 @@ body {
 }
 .background {
     background-image: url(../image/bc_image.svg);
+    height: 820px;
 }
 #reviews_block {
     margin: $margin;
     display: flex;
-    height: 820px;
     img {
         margin-top: 100px;
         @include size(600px, 580px);
@@ -93,7 +97,33 @@ body {
         font-size: x-large;
         margin: 30px 0 0 0;
     }
-    span { 
+    span {
         color: $color;
+    }
+}
+.background_2 {
+    background-image: url(../image/aboutContent.svg);
+}
+.aboutus_block {
+    height: 894px;
+    @include position(flex, center, center);
+    margin: $margin;
+    img {
+        @include size(527px, 567px);
+    }
+    .h1 {
+        @include font_text(50px, $color);
+    }
+    p {
+        font-size: 18px;
+        color: #546285;
+    }
+    button {
+        cursor: pointer;
+        margin-top: 40px;
+        color: #ffff;
+        background-color: $bColor;
+        border-radius: 6px;
+        @include size(194px, 60px);
     }
 }

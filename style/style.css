@@ -51,12 +51,12 @@ body a {
 
 .background {
   background-image: url(../image/bc_image.svg);
+  height: 820px;
 }
 
 #reviews_block {
   margin: 0 7.5%;
   display: flex;
-  height: 820px;
 }
 #reviews_block img {
   margin-top: 100px;
@@ -97,4 +97,37 @@ body a {
 }
 #reviews_block span {
   color: #35b8be;
+}
+
+.background_2 {
+  background-image: url(../image/aboutContent.svg);
+}
+
+.aboutus_block {
+  height: 894px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7.5%;
+}
+.aboutus_block img {
+  width: 527px;
+  height: 567px;
+}
+.aboutus_block .h1 {
+  font-size: 50px;
+  color: #35b8be;
+}
+.aboutus_block p {
+  font-size: 18px;
+  color: #546285;
+}
+.aboutus_block button {
+  cursor: pointer;
+  margin-top: 40px;
+  color: white;
+  background-color: #35b8be;
+  border-radius: 6px;
+  width: 194px;
+  height: 60px;
 }/*# sourceMappingURL=style.css.map */
