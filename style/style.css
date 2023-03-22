@@ -114,10 +114,6 @@ body a {
   width: 527px;
   height: 567px;
 }
-.aboutus_block .h1 {
-  font-size: 50px;
-  color: #35b8be;
-}
 .aboutus_block p {
   font-size: 18px;
   color: #546285;
@@ -130,4 +126,32 @@ body a {
   border-radius: 6px;
   width: 194px;
   height: 60px;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #35b8be;
+}
+
+.hoWork_block {
+  margin: 0 7.5%;
+}
+
+#grid {
+  float: left;
+  width: 100%;
+}
+#grid div {
+  float: left;
+  height: 440px;
+  margin-right: 10%;
+  width: 26.6666666667%;
+}
+#grid div:nth-child(3n) {
+  margin-right: 0;
+}
+#grid p {
+  text-align: center;
+  color: #546285;
 }/*# sourceMappingURL=style.css.map */

@@ -15,6 +15,17 @@ $margin: 0 7.5%;
     justify-content: $justify;
     align-items: $items;
 }
+@mixin grid($cols, $margin) {
+    float: left;
+    height: 440px;
+    margin-right: $margin;
+    width: ((100% - (($cols - 1) * $margin)) / $cols);
+
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
+
 body {
     margin: 0 auto;
     a {
@@ -111,9 +122,6 @@ body {
     img {
         @include size(527px, 567px);
     }
-    .h1 {
-        @include font_text(50px, $color);
-    }
     p {
         font-size: 18px;
         color: #546285;
@@ -125,5 +133,24 @@ body {
         background-color: $bColor;
         border-radius: 6px;
         @include size(194px, 60px);
+    }
+}
+.h1 {
+    text-align: center;
+    @include font_text(50px, $color);
+}
+
+.hoWork_block {
+    margin: $margin;
+}
+#grid {
+    float: left;
+    width: 100%;
+    div {
+        @include grid(3, 10%);
+    }
+    p {
+        text-align: center;
+        color: #546285;
     }
 }
