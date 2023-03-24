@@ -167,14 +167,17 @@ body a {
 .background_3 {
   width: 100%;
   background-color: #f5fbfc;
+  padding-top: 5%;
+  min-height: 1000px;
 }
 
 .menu_block {
   margin: 0 7.5%;
-  height: 1336px;
+  height: 100%;
 }
 .menu_block .btn_container {
   text-align: center;
+  margin-bottom: 2%;
 }
 .menu_block .btn_full {
   width: 186px;
@@ -192,13 +195,16 @@ body a {
   width: 147px;
   height: 52px;
   border-radius: 6px;
-  margin: 40px 30px 0 0;
   background-color: #f5fbfc;
   transition: background-color 0.4s linear;
 }
 .btn_menu:hover {
   color: white;
   background-color: #35b8be;
+}
+
+.sid {
+  margin: 0 2.6%;
 }
 
 .h6_like span {
@@ -263,14 +269,14 @@ body a {
   color: #35b8be;
 }
 
-#block_check {
+#check_block {
   margin: 0 7.5%;
   display: flex;
 }
-#block_check p {
+#check_block p {
   color: #546285;
 }
-#block_check button {
+#check_block button {
   border-radius: 6px;
   margin-top: 5%;
   width: 172px;

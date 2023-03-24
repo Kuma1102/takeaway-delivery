@@ -167,12 +167,15 @@ body {
 .background_3 {
     width: 100%;
     background-color: #f5fbfc;
+    padding-top: 5%;
+    min-height: 1000px;
 }
 .menu_block {
     margin: $margin;
-    height: 1336px;
+    height: 100%;
     .btn_container {
         text-align: center;
+        margin-bottom: 2%;
     }
     .btn_full {
         @include size(186px, 60px);
@@ -188,13 +191,15 @@ body {
 .btn_menu {
     @include size(147px, 52px);
     border-radius: 6px;
-    margin: 40px 30px 0 0;
     background-color: #f5fbfc;
     transition: background-color 0.4s linear;
     &:hover {
         color: #ffff;
         background-color: $bColor;
     }
+}
+.sid {
+    margin: 0 2.6%;
 }
 .h6_like {
     span {
@@ -245,7 +250,7 @@ body {
     }
 }
 
-#block_check {
+#check_block {
     margin: $margin;
     display: flex;
     p {
