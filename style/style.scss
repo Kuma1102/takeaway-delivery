@@ -1,4 +1,5 @@
 $color: #35b8be;
+$color_p: #546285;
 $bColor: #35b8be;
 $margin: 0 7.5%;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
@@ -42,6 +43,7 @@ body {
         cursor: pointer;
     }
 }
+
 .order_now {
     height: 48px;
     color: #ffffffcc;
@@ -103,7 +105,7 @@ body {
     }
     .placeH {
         font-size: 18px;
-        color: #546285;
+        color: $color_p;
     }
     .grade {
         @include size(500px, 57px);
@@ -128,7 +130,7 @@ body {
     }
     p {
         font-size: 18px;
-        color: #546285;
+        color: $color_p;
     }
     button {
         margin-top: 40px;
@@ -139,25 +141,27 @@ body {
     }
 }
 .h1 {
-    text-align: center;
     @include font_text(50px, $color);
 }
 
 .hoWork_block {
     height: 575.25px;
     margin: 10.6%;
+    h1 {
+        text-align: center;
+    }
 }
 #grid {
     float: left;
     width: 100%;
     div {
         text-align: center;
-        @include grid(3);
+        @include grid(3, 10%);
         margin: 0 10% 0 0;
     }
     p {
         text-align: center;
-        color: #546285;
+        color: $color_p;
     }
 }
 .background_3 {
@@ -167,17 +171,6 @@ body {
 .menu_block {
     margin: $margin;
     height: 1336px;
-    .btn_menu {
-        @include size(147px, 52px);
-        border-radius: 6px;
-        margin: 40px 30px 0 0;
-        background-color: #f5fbfc;
-        transition: background-color 0.4s linear;
-        &:hover {
-            color: #ffff;
-            background-color: $bColor;
-        }
-    }
     .btn_container {
         text-align: center;
     }
@@ -190,6 +183,17 @@ body {
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+}
+.btn_menu {
+    @include size(147px, 52px);
+    border-radius: 6px;
+    margin: 40px 30px 0 0;
+    background-color: #f5fbfc;
+    transition: background-color 0.4s linear;
+    &:hover {
+        color: #ffff;
+        background-color: $bColor;
     }
 }
 .h6_like {
@@ -231,12 +235,27 @@ body {
     }
     .desc_menu {
         margin: 12px 0 10px 0;
-        color: #546285;
+        color: $color_p;
     }
 }
 .mn_price {
     @include position(flex, space-between, none);
     .price {
         color: $color;
+    }
+}
+
+#block_check {
+    margin: $margin;
+    display: flex;
+    p {
+        color: $color_p;
+    }
+    button {
+        border-radius: 6px;
+        margin-top: 5%;
+        @include size(172px, 60px);
+        background-color: $bColor;
+        color: #ffff;
     }
 }

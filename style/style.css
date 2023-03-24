@@ -131,7 +131,6 @@ body a {
 }
 
 .h1 {
-  text-align: center;
   font-size: 50px;
   color: #35b8be;
 }
@@ -139,6 +138,9 @@ body a {
 .hoWork_block {
   height: 575.25px;
   margin: 10.6%;
+}
+.hoWork_block h1 {
+  text-align: center;
 }
 
 #grid {
@@ -171,18 +173,6 @@ body a {
   margin: 0 7.5%;
   height: 1336px;
 }
-.menu_block .btn_menu {
-  width: 147px;
-  height: 52px;
-  border-radius: 6px;
-  margin: 40px 30px 0 0;
-  background-color: #f5fbfc;
-  transition: background-color 0.4s linear;
-}
-.menu_block .btn_menu:hover {
-  color: white;
-  background-color: #35b8be;
-}
 .menu_block .btn_container {
   text-align: center;
 }
@@ -196,6 +186,19 @@ body a {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.btn_menu {
+  width: 147px;
+  height: 52px;
+  border-radius: 6px;
+  margin: 40px 30px 0 0;
+  background-color: #f5fbfc;
+  transition: background-color 0.4s linear;
+}
+.btn_menu:hover {
+  color: white;
+  background-color: #35b8be;
 }
 
 .h6_like span {
@@ -258,4 +261,20 @@ body a {
 }
 .mn_price .price {
   color: #35b8be;
+}
+
+#block_check {
+  margin: 0 7.5%;
+  display: flex;
+}
+#block_check p {
+  color: #546285;
+}
+#block_check button {
+  border-radius: 6px;
+  margin-top: 5%;
+  width: 172px;
+  height: 60px;
+  background-color: #35b8be;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
