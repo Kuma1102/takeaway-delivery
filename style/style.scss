@@ -264,3 +264,26 @@ body {
         color: #ffff;
     }
 }
+.background_4 {
+    background-image: url(../image/aboutContent.svg);
+}
+.call_block {
+    margin: $margin;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    p {
+        color: $color_p;
+    }
+    button {
+        border-radius: 6px;
+        margin-top: 5%;
+        @include size(225px, 60px);
+        background-color: $bColor;
+        color: #ffff;
+    }
+    img {
+        height: 567px;
+        width: 527px;
+    }
+}

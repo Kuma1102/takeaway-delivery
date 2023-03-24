@@ -283,4 +283,30 @@ body a {
   height: 60px;
   background-color: #35b8be;
   color: white;
+}
+
+.background_4 {
+  background-image: url(../image/aboutContent.svg);
+}
+
+.call_block {
+  margin: 0 7.5%;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+}
+.call_block p {
+  color: #546285;
+}
+.call_block button {
+  border-radius: 6px;
+  margin-top: 5%;
+  width: 225px;
+  height: 60px;
+  background-color: #35b8be;
+  color: white;
+}
+.call_block img {
+  height: 567px;
+  width: 527px;
 }/*# sourceMappingURL=style.css.map */
