@@ -266,10 +266,11 @@ body {
 }
 .background_4 {
     background-image: url(../image/aboutContent.svg);
+    height: 850px;
 }
 .call_block {
     margin: $margin;
-    min-height: 850px;
+    height: 100%;
     display: flex;
     align-items: center;
     p {
@@ -282,8 +283,82 @@ body {
         background-color: $bColor;
         color: #ffff;
     }
-    img {
-        height: 567px;
-        width: 527px;
+}
+.support_block {
+    padding: 2.8%;
+    @include position(flex, space-between, none);
+    span {
+        color: #1b9097;
+    }
+    h3 {
+        font-size: 53px;
+    }
+    button {
+        background-color: #ffff;
+        color: $color;
+        border-radius: 4px;
+        @include size(162px, 60px);
+    }
+    .bc {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 4%;
+        background-image: url(../image/support.svg);
+        @include size(666px, 640px);
+    }
+}
+
+footer {
+    height: 593px;
+    width: 100%;
+    padding: 8.1% 10% 5.1% 10%;
+    background-image: url(../image/bc_footer.png);
+
+    .div {
+        display: flex;
+        @include position(flex, space-between, none);
+    }
+    h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .fotr_a {
+        display: grid;
+        line-height: 45px;
+    }
+    .fotr_a_container {
+        width: 50%;
+        height: 50%;
+        @include position(flex, space-between, none);
+    }
+    .fotr_flow {
+        height: 40%;
+    }
+    .dno {
+        @include position(flex, space-between, none);
+        align-items: flex-end;
+        height: 50%;
+        span {
+            color: $color;
+        }
+    }
+    .btn_circle {
+        @include size(40px, 40px);
+        border-radius: 50%;
+        border: 1px solid #7e828f4d;
+        @include position(flex, center, center);
+    }
+    .circle_container {
+        width: 192px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.span {
+    color: $color_p;
+    transition: color 0.5s;
+    &:hover {
+        color: $color;
     }
 }
